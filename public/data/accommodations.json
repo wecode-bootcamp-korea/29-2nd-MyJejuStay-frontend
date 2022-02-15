@@ -1,0 +1,118 @@
+{
+  "accommodationsInfo": [
+    {
+      "id": 1,
+      "region": "수영구의 공동 주택 전체",
+      "desc": "#Good house오픈특가#광안리 바닷가10초#연인친구가족#호텔침구#오션&시티뷰#넷플릭스",
+      "price": "59,704",
+      "isMentioned": true,
+      "rating": "4.87",
+      "comments": "15",
+      "term": "4월 9일~15일",
+      "imgs": [
+        "/images/productlist/nature1.jpg",
+        "/images/productlist/nature2.jpg",
+        "/images/productlist/nature3.jpg",
+        "/images/productlist/nature4.jpg",
+        "/images/productlist/nature5.jpg",
+        "/images/productlist/nature7.jpg",
+        "/images/productlist/nature6.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "region": "제주시의 공동주택 전체",
+      "desc": "달콤바당stay-바다멍때리기(제주공항10분,애월15분,이호테우해변인근)",
+      "price": "73,000",
+      "isMentioned": false,
+      "rating": "4.21",
+      "comments": "355",
+      "term": "4월 23일~30일",
+      "imgs": [
+        "/images/productlist/nature1.jpg",
+        "/images/productlist/nature2.jpg",
+        "/images/productlist/nature3.jpg",
+        "/images/productlist/nature4.jpg",
+        "/images/productlist/nature5.jpg",
+        "/images/productlist/nature7.jpg",
+        "/images/productlist/nature6.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "region": "게스트용 별채 전체",
+      "desc": "제주 애월 감성 공유 민박. 별채 2인실",
+      "price": "135,000",
+      "isMentioned": true,
+      "rating": "4.97",
+      "comments": "61",
+      "term": "5월 7일~14일",
+      "imgs": [
+        "/images/productlist/nature1.jpg",
+        "/images/productlist/nature2.jpg",
+        "/images/productlist/nature3.jpg",
+        "/images/productlist/nature4.jpg",
+        "/images/productlist/nature5.jpg",
+        "/images/productlist/nature7.jpg",
+        "/images/productlist/nature6.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "region": "수영구의 공동 주택 전체",
+      "desc": "#Good house오픈특가#광안리 바닷가10초#연인친구가족#호텔침구#오션&시티뷰#넷플릭스",
+      "price": "59,704",
+      "isMentioned": true,
+      "rating": "4.87",
+      "comments": "15",
+      "term": "4월 9일~15일",
+      "imgs": [
+        "/images/productlist/nature1.jpg",
+        "/images/productlist/nature2.jpg",
+        "/images/productlist/nature3.jpg",
+        "/images/productlist/nature4.jpg",
+        "/images/productlist/nature5.jpg",
+        "/images/productlist/nature7.jpg",
+        "/images/productlist/nature6.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "region": "수영구의 공동 주택 전체",
+      "desc": "#Good house오픈특가#광안리 바닷가10초#연인친구가족#호텔침구#오션&시티뷰#넷플릭스",
+      "price": "59,704",
+      "isMentioned": true,
+      "rating": "4.87",
+      "comments": "15",
+      "term": "4월 9일~15일",
+      "imgs": [
+        "/images/productlist/nature1.jpg",
+        "/images/productlist/nature2.jpg",
+        "/images/productlist/nature3.jpg",
+        "/images/productlist/nature4.jpg",
+        "/images/productlist/nature5.jpg",
+        "/images/productlist/nature7.jpg",
+        "/images/productlist/nature6.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "region": "수영구의 공동 주택 전체",
+      "desc": "#Good house오픈특가#광안리 바닷가10초#연인친구가족#호텔침구#오션&시티뷰#넷플릭스",
+      "price": "59,704",
+      "isMentioned": true,
+      "rating": "4.87",
+      "comments": "15",
+      "term": "4월 9일~15일",
+      "imgs": [
+        "/images/productlist/nature1.jpg",
+        "/images/productlist/nature2.jpg",
+        "/images/productlist/nature3.jpg",
+        "/images/productlist/nature4.jpg",
+        "/images/productlist/nature5.jpg",
+        "/images/productlist/nature7.jpg",
+        "/images/productlist/nature6.jpg"
+      ]
+    }
+  ]
+}

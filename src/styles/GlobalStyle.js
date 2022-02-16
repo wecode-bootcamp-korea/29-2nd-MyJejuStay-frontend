@@ -6,6 +6,10 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
+
+  body {
+    font-family: 'SF Pro Display', sans-serif;
+  }
   
 `;
 export default GlobalStyle;

@@ -12,5 +12,6 @@ const GlobalStyle = createGlobalStyle`
     color: #484848;
   }
   
+
 `;
 export default GlobalStyle;

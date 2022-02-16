@@ -1,0 +1,39 @@
+/* Generated for Chrome v98.0.4758.102 on Macintosh */
+
+/* Available weights for `SFProDisplay`: 100, 200, 300, 400, 500, 600, 700, 800, 900 */
+@font-face {
+     font-family: SF Pro Display;
+     src: url("https://fdn.fontcdn.ir/Fonts/SFProDisplay/5e4509d3e53b2e3faf7874bf6078aaf0d86ba9d6a8ec3079cc872b7b1d4b338b.woff2") format("woff2");
+     font-weight: 100;
+     font-style: normal;
+}
+@font-face {
+     font-family: SF Pro Display;
+     src: url("https://fdn.fontcdn.ir/Fonts/SFProDisplay/104802c6c6dc7a3d84d629a79b78046847a9cc8caac8f73ea07e2dddfb5e31ce.woff2") format("woff2");
+     font-weight: 300;
+     font-style: normal;
+}
+@font-face {
+     font-family: SF Pro Display;
+     src: url("https://fdn.fontcdn.ir/Fonts/SFProDisplay/5bc1142d5fc993d2ec21a8fa93a17718818e8172dffc649b7d8a3ab459cfbf9c.woff2") format("woff2");
+     font-weight: 400;
+     font-style: normal;
+}
+@font-face {
+     font-family: SF Pro Display;
+     src: url("https://fdn.fontcdn.ir/Fonts/SFProDisplay/b8da67821e588e3ee5516083d99f1d9907c23a24fcb52dfb3c57cd38924dcef7.woff2") format("woff2");
+     font-weight: 500;
+     font-style: normal;
+}
+@font-face {
+     font-family: SF Pro Display;
+     src: url("https://fdn.fontcdn.ir/Fonts/SFProDisplay/e80a61b2cbc6d6b3b3ed8b50bcd8f6a89f8f5b69460e03f47defe0554c3220d2.woff2") format("woff2");
+     font-weight: 600;
+     font-style: normal;
+}
+@font-face {
+     font-family: SF Pro Display;
+     src: url("https://fdn.fontcdn.ir/Fonts/SFProDisplay/32b6db04338d853de4148e775afcacadfb2d0bd3e8f10192916f6688f34c6005.woff2") format("woff2");
+     font-weight: 700;
+     font-style: normal;
+}

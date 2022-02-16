@@ -1,6 +1,12 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ThemeList } from '../../components/Nav/Theme';
+=======
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+>>>>>>> 47ec2b8 (Add: Main페이지)
 import styled from 'styled-components';
 
 const Main = () => {
@@ -18,13 +24,23 @@ const Main = () => {
 
   return (
     <MainSection>
+<<<<<<< HEAD
       <MainVideo autoPlay muted loop>
         <source src="https://myjejustay.s3.ap-northeast-2.amazonaws.com/MyJejuStay.mp4" />
       </MainVideo>
+=======
+      <MainVideo width="100%" height="100%" autoPlay muted loop>
+        <source src="https://myjejustay.s3.ap-northeast-2.amazonaws.com/MyJejuStay.mp4" />
+      </MainVideo>
+      {/* <video width="100%" height="100%" autoPlay muted loop>
+        <source src={MainVideo.mainvideo} />
+      </video> */}
+>>>>>>> 47ec2b8 (Add: Main페이지)
 
       <MainContents>
         <MainHeader>당신의 쉼은 어디에 있나요?</MainHeader>
         <MainContetsBox>
+<<<<<<< HEAD
           {ThemeList.map(data => (
             <MainItem key={data.id}>
               <MainLink key={data.id} to={data.ThemeLink}>
@@ -32,6 +48,23 @@ const Main = () => {
               </MainLink>
             </MainItem>
           ))}
+=======
+          <MainItem>
+            <MainLink to="/Productlist?themaGroup='해변'">
+              <MainLinkTitle>Ocean</MainLinkTitle>
+            </MainLink>
+          </MainItem>
+          <MainItem>
+            <MainLink to="/Productlist?themaGroup='숲'">
+              <MainLinkTitle>Forest</MainLinkTitle>
+            </MainLink>
+          </MainItem>
+          <MainItem>
+            <MainLink to="/Productlist?themaGroup='도심'">
+              <MainLinkTitle>City</MainLinkTitle>
+            </MainLink>
+          </MainItem>
+>>>>>>> 47ec2b8 (Add: Main페이지)
         </MainContetsBox>
       </MainContents>
     </MainSection>
@@ -44,7 +77,10 @@ const MainSection = styled.section`
 `;
 
 const MainVideo = styled.video`
+<<<<<<< HEAD
   margin-top: 60px;
+=======
+>>>>>>> 47ec2b8 (Add: Main페이지)
   width: 100%;
   height: 100%;
 `;
@@ -54,7 +90,6 @@ const MainContents = styled.div`
   position: absolute;
   bottom: 30%;
   left: 25%;
-  /* background-color: orange; */
   display: flex;
   text-align: center;
   align-content: flex-start;
@@ -88,9 +123,15 @@ const MainItem = styled.div`
   width: 200px;
   height: 100px;
   margin: 20px;
+<<<<<<< HEAD
   border-radius: 2px;
   border: 1px solid white;
   text-align: center;
+=======
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid white;
+>>>>>>> 47ec2b8 (Add: Main페이지)
   align-items: center;
   justify-content: space-around;
   &:hover {
@@ -115,5 +156,12 @@ const MainLinkTitle = styled.div`
     font-weight: 400;
   }
 `;
+=======
+import React from 'react';
+
+function Main() {
+  return <div>Main</div>;
+}
+>>>>>>> 38aa185 (Review : 초기 세팅)
 
 export default Main;

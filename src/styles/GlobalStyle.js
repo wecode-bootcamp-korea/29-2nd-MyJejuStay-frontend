@@ -10,6 +10,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'SF Pro Display', sans-serif;
     color: #484848;
   }
+
+  button {
+    cursor: pointer;
+  }
   
 
 `;

@@ -1,0 +1,239 @@
+{
+  "message": [
+    {
+      "id": 1,
+      "name": "우연재",
+      "description": "시인의 숨결이 담긴, 하글과 바람과 별과 시",
+      "detail_description": "숙소 소개\n안녕하세요!\n아름다운 산방산과 신비로운 안덕계곡이 흐르는\n아무도 간섭받지 않고 조용히 힐링하는 에코그린 리조트입니다.\n[🍖 바베큐]\n- 이용요금 : 3만원\n- 제공품목 : 그릴, 숯, 불판, 가스자동토치, 부탄가스, 장갑, 집게, 가위 등\n- 유의사항 : 고기 등 음식은 직접 준비 필요\n[📍 숙소 주변 관광지]\n화순해수욕장, 산방산, 중문관광단지, 용머리해안, 오설록, 카멜리아힐, 조각공원",
+      "price": "96000.00",
+      "address": "제주시 한림읍 귀덕 6길 94",
+      "region": "제주시",
+      "is_verified": true,
+      "latitude": "33.4357014",
+      "longtitude": "126.2915661",
+      "check_in_time": "14:00:00",
+      "check_out_time": "11:00:00",
+      "available_people": 4,
+      "image_url": [
+        "https://images.unsplash.com/photo-1616285677522-8cf9274a0e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
+        "https://images.unsplash.com/photo-1616285677522-8cf9274a0e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
+        "https://images.unsplash.com/photo-1616285677522-8cf9274a0e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+      ],
+      "thema_group": ["해변"]
+    },
+    {
+      "id": 2,
+      "name": "라마다 제주시티 호텔",
+      "description": "제주 공항과 여객선 터미널에서 15분 내 거리에 위치하여 보다 편리한 교통망을 자랑하고 있으며 제주의 문화, 쇼핑, 식사, 비즈니스에 최적합한 호텔입니다.",
+      "detail_description": "숙소 소개\n안녕하세요!\n아름다운 산방산과 신비로운 안덕계곡이 흐르는\n아무도 간섭받지 않고 조용히 힐링하는 독채민박 입니다.\n[🍖  바베큐]\n- 이용요금 : 3만원\n- 제공품목 : 그릴, 숯, 불판, 가스자동토치, 부탄가스, 장갑, 집게, 가위 등\n- 유의사항 : 고기 등 음식은 직접 준비 필요\n📍 숙소 주변 관광지]\n화순해수욕장, 산방산, 중문관광단지, 용머리해안, 오설록, 카멜리아힐, 조각공원",
+      "price": "65000.00",
+      "address": "제주시 중앙로 304",
+      "region": "제주시",
+      "is_verified": false,
+      "latitude": "33.4935327",
+      "longtitude": "126.5343135",
+      "check_in_time": "14:00:00",
+      "check_out_time": "11:00:00",
+      "available_people": 5,
+      "image_url": [
+        "https://images.unsplash.com/photo-1588611395188-fe6bc975ed50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+        "https://images.unsplash.com/photo-1588611395188-fe6bc975ed50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+        "https://images.unsplash.com/photo-1574276323455-8333699f7358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+      ],
+      "thema_group": ["숲"]
+    },
+    {
+      "id": 3,
+      "name": "이문간하우스",
+      "description": "잔디 마당과 낮은 돌담을 보며 휴식을 취하는 감성숙소",
+      "detail_description": "숙소 소개\n안녕하세요!\n아름다운 산방산과 신비로운 안덕계곡이 흐르는\n아무도 간섭받지 않고 조용히 힐링하는 독채민박 입니다.\n[🍖  바베큐]\n- 이용요금 : 3만원\n- 제공품목 : 그릴, 숯, 불판, 가스자동토치, 부탄가스, 장갑, 집게, 가위 등\n- 유의사항 : 고기 등 음식은 직접 준비 필요\n📍 숙소 주변 관광지]\n화순해수욕장, 산방산, 중문관광단지, 용머리해안, 오설록, 카멜리아힐, 조각공원",
+      "price": "160000.00",
+      "address": "제주시 애월읍 고내로7길 15",
+      "region": "제주시",
+      "is_verified": true,
+      "latitude": "33.4653706",
+      "longtitude": "126.3375268",
+      "check_in_time": "16:00:00",
+      "check_out_time": "11:00:00",
+      "available_people": 7,
+      "image_url": [
+        "https://images.unsplash.com/photo-1574276323455-8333699f7358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+        "https://images.unsplash.com/photo-1574276323455-8333699f7358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+        "https://images.unsplash.com/photo-1574276323455-8333699f7358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+      ],
+      "thema_group": ["도심"]
+    },
+    {
+      "id": 4,
+      "name": "스테이 스놉",
+      "description": "깔끔한 컨디션에 스타일리쉬하고 유니크한 오션뷰 펜션",
+      "detail_description": "숙소 소개\n안녕하세요!\n아름다운 산방산과 신비로운 안덕계곡이 흐르는\n아무도 간섭받지 않고 조용히 힐링하는 독채민박 입니다.\n[🍖  바베큐]\n- 이용요금 : 3만원\n- 제공품목 : 그릴, 숯, 불판, 가스자동토치, 부탄가스, 장갑, 집게, 가위 등\n- 유의사항 : 고기 등 음식은 직접 준비 필요\n📍 숙소 주변 관광지]\n화순해수욕장, 산방산, 중문관광단지, 용머리해안, 오설록, 카멜리아힐, 조각공원",
+      "price": "90000.00",
+      "address": "서귀포시 예래동 1795-1",
+      "region": "서귀포시",
+      "is_verified": false,
+      "latitude": "33.2333062",
+      "longtitude": "126.3696470",
+      "check_in_time": "15:00:00",
+      "check_out_time": "11:00:00",
+      "available_people": 2,
+      "image_url": [
+        "https://images.unsplash.com/photo-1588611395188-fe6bc975ed50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+        "https://images.unsplash.com/photo-1588611395188-fe6bc975ed50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+        "https://images.unsplash.com/photo-1588611395188-fe6bc975ed50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+        "https://images.unsplash.com/photo-1588611395188-fe6bc975ed50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80"
+      ],
+      "thema_group": ["숲"]
+    },
+    {
+      "id": 5,
+      "name": "세화1번지",
+      "description": "아이와 손잡고 세화해변 산책을 즐길 수 있는 감성숙소",
+      "detail_description": "숙소 소개\n안녕하세요!\n아름다운 산방산과 신비로운 안덕계곡이 흐르는\n아무도 간섭받지 않고 조용히 힐링하는 독채민박 입니다.\n[🍖  바베큐]\n- 이용요금 : 3만원\n- 제공품목 : 그릴, 숯, 불판, 가스자동토치, 부탄가스, 장갑, 집게, 가위 등\n- 유의사항 : 고기 등 음식은 직접 준비 필요\n📍 숙소 주변 관광지]\n화순해수욕장, 산방산, 중문관광단지, 용머리해안, 오설록, 카멜리아힐, 조각공원",
+      "price": "80000.00",
+      "address": "제주시 구좌읍 세화리 1-3",
+      "region": "제주시",
+      "is_verified": true,
+      "latitude": "33.5230644",
+      "longtitude": "126.8620968",
+      "check_in_time": "16:00:00",
+      "check_out_time": "11:00:00",
+      "available_people": 5,
+      "image_url": [
+        "https://images.unsplash.com/photo-1591406847502-6c904bbe1f80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1396&q=80",
+        "https://images.unsplash.com/photo-1591406847502-6c904bbe1f80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1396&q=80",
+        "https://images.unsplash.com/photo-1591406847502-6c904bbe1f80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1396&q=80",
+        "https://images.unsplash.com/photo-1591406847502-6c904bbe1f80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1396&q=80",
+        "https://images.unsplash.com/photo-1591406847502-6c904bbe1f80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1396&q=80",
+        "https://images.unsplash.com/photo-1591406847502-6c904bbe1f80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1396&q=80"
+      ],
+      "thema_group": ["해변"]
+    },
+    {
+      "id": 6,
+      "name": "휘닉스 제주 섭지코지",
+      "description": "제주의 자연과 잘 어우러지는 자연친화적 리조트",
+      "detail_description": "숙소 소개\n안녕하세요!\n아름다운 산방산과 신비로운 안덕계곡이 흐르는\n아무도 간섭받지 않고 조용히 힐링하는 독채민박 입니다.\n[🍖  바베큐]\n- 이용요금 : 3만원\n- 제공품목 : 그릴, 숯, 불판, 가스자동토치, 부탄가스, 장갑, 집게, 가위 등\n- 유의사항 : 고기 등 음식은 직접 준비 필요\n📍 숙소 주변 관광지]\n화순해수욕장, 산방산, 중문관광단지, 용머리해안, 오설록, 카멜리아힐, 조각공원",
+      "price": "220000.00",
+      "address": "서귀포시 성산읍 섭지코지로 107",
+      "region": "서귀포시",
+      "is_verified": false,
+      "latitude": "33.4300890",
+      "longtitude": "126.9273000",
+      "check_in_time": "14:00:00",
+      "check_out_time": "11:00:00",
+      "available_people": 6,
+      "image_url": [
+        "https://images.unsplash.com/photo-1564889054706-1d6953ba63c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "https://images.unsplash.com/photo-1564889054706-1d6953ba63c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "https://images.unsplash.com/photo-1564889054706-1d6953ba63c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+      ],
+      "thema_group": ["숲"]
+    },
+    {
+      "id": 7,
+      "name": "더큐브 리조트 제주",
+      "description": " 아름다운 제주 자연과 바다를 볼 수 있는 호텔",
+      "detail_description": "숙소 소개\n안녕하세요!\n아름다운 산방산과 신비로운 안덕계곡이 흐르는\n아무도 간섭받지 않고 조용히 힐링하는 독채민박 입니다.\n[🍖  바베큐]\n- 이용요금 : 3만원\n- 제공품목 : 그릴, 숯, 불판, 가스자동토치, 부탄가스, 장갑, 집게, 가위 등\n- 유의사항 : 고기 등 음식은 직접 준비 필요\n📍 숙소 주변 관광지]\n화순해수욕장, 산방산, 중문관광단지, 용머리해안, 오설록, 카멜리아힐, 조각공원",
+      "price": "88000.00",
+      "address": "서귀포시 솔오름로 105번길 24",
+      "region": "서귀포시",
+      "is_verified": true,
+      "latitude": "33.4300893",
+      "longtitude": "126.9272997",
+      "check_in_time": "14:00:00",
+      "check_out_time": "11:00:00",
+      "available_people": 7,
+      "image_url": [
+        "https://images.unsplash.com/photo-1623558940118-682b5de9f417?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
+        "https://images.unsplash.com/photo-1623558940118-682b5de9f417?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
+        "https://images.unsplash.com/photo-1623558940118-682b5de9f417?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+      ],
+      "thema_group": ["해변"]
+    },
+    {
+      "id": 8,
+      "name": "신라스테이 제주",
+      "description": "신라스테이는 호텔신라가 새롭게 선보이는 비즈니스 호텔입니다.",
+      "detail_description": "숙소 소개\n안녕하세요!\n아름다운 산방산과 신비로운 안덕계곡이 흐르는\n아무도 간섭받지 않고 조용히 힐링하는 독채민박 입니다.\n[🍖  바베큐]\n- 이용요금 : 3만원\n- 제공품목 : 그릴, 숯, 불판, 가스자동토치, 부탄가스, 장갑, 집게, 가위 등\n- 유의사항 : 고기 등 음식은 직접 준비 필요\n📍 숙소 주변 관광지]\n화순해수욕장, 산방산, 중문관광단지, 용머리해안, 오설록, 카멜리아힐, 조각공원",
+      "price": "110000.00",
+      "address": "제주시 노연로 100",
+      "region": "제주시",
+      "is_verified": false,
+      "latitude": "33.4855443",
+      "longtitude": "126.4908992",
+      "check_in_time": "15:00:00",
+      "check_out_time": "12:00:00",
+      "available_people": 4,
+      "image_url": [
+        "https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1468&q=80",
+        "https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1468&q=80",
+        "https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1468&q=80"
+      ],
+      "thema_group": ["숲"]
+    },
+    {
+      "id": 9,
+      "name": "호텔 토스카나",
+      "description": "제주와 이탈리아 토스카나 주의 문화,풍경,미식등 전반에 걸친 문화+ 지역적 특징을 결합해 탄생했습니다.",
+      "detail_description": "숙소 소개\n안녕하세요!\n아름다운 산방산과 신비로운 안덕계곡이 흐르는\n아무도 간섭받지 않고 조용히 힐링하는 독채민박 입니다.\n[🍖  바베큐]\n- 이용요금 : 3만원\n- 제공품목 : 그릴, 숯, 불판, 가스자동토치, 부탄가스, 장갑, 집게, 가위 등\n- 유의사항 : 고기 등 음식은 직접 준비 필요\n📍 숙소 주변 관광지]\n화순해수욕장, 산방산, 중문관광단지, 용머리해안, 오설록, 카멜리아힐, 조각공원",
+      "price": "280000.00",
+      "address": "서귀포시 용흥로66번길 158-7",
+      "region": "서귀포시",
+      "is_verified": true,
+      "latitude": "33.2654992",
+      "longtitude": "126.4843657",
+      "check_in_time": "15:00:00",
+      "check_out_time": "11:00:00",
+      "available_people": 4,
+      "image_url": [
+        "https://images.unsplash.com/photo-1503398444261-20769d4a9167?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1532&q=80",
+        "https://images.unsplash.com/photo-1503398444261-20769d4a9167?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1532&q=80",
+        "https://images.unsplash.com/photo-1503398444261-20769d4a9167?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1532&q=80"
+      ],
+      "thema_group": ["해변"]
+    },
+    {
+      "id": 10,
+      "name": "오션스위츠 제주",
+      "description": "수준높은 문화시설, 관광과 레저를 손쉽게 이용할 수 있는 편리한 교통의 요지에 위치",
+      "detail_description": "숙소 소개\n안녕하세요!\n아름다운 산방산과 신비로운 안덕계곡이 흐르는\n아무도 간섭받지 않고 조용히 힐링하는 독채민박 입니다.\n[🍖  바베큐]\n- 이용요금 : 3만원\n- 제공품목 : 그릴, 숯, 불판, 가스자동토치, 부탄가스, 장갑, 집게, 가위 등\n- 유의사항 : 고기 등 음식은 직접 준비 필요\n📍 숙소 주변 관광지]\n화순해수욕장, 산방산, 중문관광단지, 용머리해안, 오설록, 카멜리아힐, 조각공원",
+      "price": "75000.00",
+      "address": "제주시 탑동해안로 74",
+      "region": "제주시",
+      "is_verified": false,
+      "latitude": "33.5182749",
+      "longtitude": "126.5233306",
+      "check_in_time": "14:00:00",
+      "check_out_time": "12:00:00",
+      "available_people": 10,
+      "image_url": [
+        "https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1468&q=80",
+        "https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1468&q=80",
+        "https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1468&q=80"
+      ],
+      "thema_group": ["해변"]
+    },
+    {
+      "id": 11,
+      "name": "그라벨 호텔",
+      "description": "제주 유일하게 자갈로 이루어진 역빈해안이 눈 앞에 펼쳐지는 곳, 그라벨호텔제주입니다.",
+      "detail_description": "숙소 소개\n안녕하세요!\n아름다운 산방산과 신비로운 안덕계곡이 흐르는\n아무도 간섭받지 않고 조용히 힐링하는 독채민박 입니다.\n[🍖  바베큐]\n- 이용요금 : 3만원\n- 제공품목 : 그릴, 숯, 불판, 가스자동토치, 부탄가스, 장갑, 집게, 가위 등\n- 유의사항 : 고기 등 음식은 직접 준비 필요\n📍 숙소 주변 관광지]\n화순해수욕장, 산방산, 중문관광단지, 용머리해안, 오설록, 카멜리아힐, 조각공원",
+      "price": "80000.00",
+      "address": "제주시 일주서로 7316",
+      "region": "제주시",
+      "is_verified": true,
+      "latitude": "33.4924357",
+      "longtitude": "126.4287033",
+      "check_in_time": "15:00:00",
+      "check_out_time": "11:00:00",
+      "available_people": 12,
+      "image_url": [
+        "https://images.unsplash.com/photo-1623558940118-682b5de9f417?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
+        "https://images.unsplash.com/photo-1623558940118-682b5de9f417?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
+        "https://images.unsplash.com/photo-1623558940118-682b5de9f417?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+      ],
+      "thema_group": ["도심"]
+    }
+  ]
+}

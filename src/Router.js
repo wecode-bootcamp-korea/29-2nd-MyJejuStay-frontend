@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav/Nav';
-import Modal from 'react-modal';
 import Main from './pages/Main/Main';
 import ProductList from './pages/ProductList/ProductList';
 import DetailPageHeader from './pages/DetailPage/DetailPageHeader/DetailPageHeader';
 import MyPage from './pages/MyPage/MyPage';
+import DetailPageReservation from './pages/DetailPage/DetailPageReservation/Reservation';
 import SignUp from './pages/SignUp/SignUp';
 import Footer from './components/Footer/Footer';
 import DetailPageInfo from './pages/DetailPage/DetailPageInfo/DetailPageInfo';
@@ -24,12 +24,11 @@ const Router = () => {
         <Route path="/detail-info" element={<DetailPageInfo />} />
         <Route path="/accommodations/:id" element={<DetailPageInfo />} />
         <Route path="/detail-photo" element={<DetailPagePhoto />} />
+        <Route path="/reservation" element={<DetailPageReservation />} />
       </Routes>
       <Footer />
     </BrowserRouter>
   );
 };
-
-Modal.setAppElement('#root');
 
 export default Router;

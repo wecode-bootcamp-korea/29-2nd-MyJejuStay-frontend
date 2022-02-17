@@ -6,6 +6,8 @@ import styled from 'styled-components';
 const Main = () => {
   // const [MainVideo, SetMainVideo] = useState([]);
 
+  // console.log('hello');
+
   // useEffect(() => {
   //   fetch('http://10.58.2.82:8000/mainpage')
   //     .then(res => res.json())

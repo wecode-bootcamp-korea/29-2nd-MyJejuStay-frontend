@@ -8,6 +8,7 @@ import DetailPageHeader from './pages/DetailPage/DetailPageHeader/DetailPageHead
 import MyPage from './pages/MyPage/MyPage';
 import SignUp from './pages/SignUp/SignUp';
 import Footer from './components/Footer/Footer';
+import DetailPageInfo from './pages/DetailPage/DetailPageInfo/DetailPageInfo';
 
 const Router = () => {
   return (
@@ -19,6 +20,8 @@ const Router = () => {
         <Route path="/detail" element={<DetailPageHeader />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/mypage/*" element={<MyPage />} />
+        <Route path="/detail-info" element={<DetailPageInfo />} />
+        <Route path="/accommodations/:id" element={<DetailPageInfo />} />
       </Routes>
       <Footer />
     </BrowserRouter>

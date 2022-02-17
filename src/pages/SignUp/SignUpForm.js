@@ -5,7 +5,7 @@ import Input from './Input';
 import styled from 'styled-components';
 
 const SignUpForm = props => {
-  const { type, title, inputData } = props;
+  const { title, inputData } = props;
 
   const [inputValues, setInputValues] = useState({
     name: '',

@@ -11,7 +11,6 @@ const DateRangeFilter = ({
   endDate,
   setEndDate,
   setRange,
-  setIsOpen,
 }) => {
   const handleSelect = ranges => {
     setStartDate(ranges.selection.startDate);
@@ -92,10 +91,9 @@ const DateRangeFilter = ({
 const DateRangeFilterWrap = styled.div`
   position: absolute;
   width: min-content;
-  top: 55px;
+  // top: 55px;
   left: 0px;
   z-index: 10000;
-
   .rdrDefinedRangesWrapper {
     width: 0;
   }

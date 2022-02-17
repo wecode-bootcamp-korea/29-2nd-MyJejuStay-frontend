@@ -2,9 +2,9 @@
   {
     "id": 1,
     "name": "마눌펜션",
-    "description": "제주의 감성이 물씬! 돌담과 귤나무가 있는 독채 숙소!",
-    "detail_description": "안녕하세요!\n아름다운 산방산과 신비로운 언덕계곡이 흐르는\n아무도 간섭받지 않고 조용히 힐링하는 독채민박 입니다.\n\n[🍖 바베큐]\n- 이용요금 : 3만원\n- 제공품목 : 그릴, 숯, 불판, 가스자동토치, 부탄가스, 장갑, 집게, 가위 등\n -유의사항 : 고기 등 음식은 직접 준비 필요\n\n[📍 숙소 주변 관광지]\n화순해수욕장, 산방산, 중문관광단지, 용머리해안, 오설록, 카멜리아힐, 조각공원",
-    "price": "1,000,000",
+    "description": "애월! 넓은 잔디마당과 돌담~제주스러운 깨끗한 펜션",
+    "region": "해변",
+    "price": "40000",
     "is_verified": true,
     "latitude": 33.450741,
     "longitude": 126.335804,
@@ -12,7 +12,13 @@
     "check_out_time": "11:00AM",
     "img_url": ["https://images.unsplash.com/photo-1616285677522-8cf9274a0e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
       "https://images.unsplash.com/photo-1616285677522-8cf9274a0e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
-      "https://images.unsplash.com/photo-1616285677522-8cf9274a0e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"]
+      "https://images.unsplash.com/photo-1616285677522-8cf9274a0e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"],
+    "available_people": 4,
+    "minimum_stay": 29,
+    "total_price": 291840,
+    "discount_price": 87552,
+    "discounted_price": 204288,
+    "booking_days": 34
   },
   {
     "id": 2,
@@ -24,7 +30,12 @@
     "latitude": 33.450741,
     "longitude": 126.335804,
     "check_in_time": "4:00AM",
-    "check_out_time": "11:00AM"
+    "check_out_time": "11:00AM",
+    "available_people": 4,
+    "minimum_stay": 29,
+    "total_price": 291840,
+    "discount_price": 87552,
+    "discounted_price": 204288
   },
   {
     "id": 3,
@@ -36,6 +47,11 @@
     "latitude": 33.450741,
     "longitude": 126.335804,
     "check_in_time": "4:00AM",
-    "check_out_time": "11:00AM"
+    "check_out_time": "11:00AM",
+    "available_people": 4,
+    "minimum_stay": 29,
+    "total_price": 291840,
+    "discount_price": 87552,
+    "discounted_price": 204288
   }
 ]

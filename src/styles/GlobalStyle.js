@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
   
   * {
     box-sizing: border-box;
+    
   }
   body {
     font-family: 'SF Pro Display', sans-serif;
@@ -19,5 +20,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'SF Pro Display', sans-serif
   }
 
+  button {
+    cursor:pointer;
+  }
 `;
 export default GlobalStyle;

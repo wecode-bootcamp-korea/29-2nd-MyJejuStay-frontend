@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'SF Pro Display', sans-serif;
+    color: #484848;
   }
   
 `;

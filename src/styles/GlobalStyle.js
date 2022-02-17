@@ -14,7 +14,10 @@ const GlobalStyle = createGlobalStyle`
   button {
     cursor: pointer;
   }
-  
+
+  body {
+    font-family: 'SF Pro Display', sans-serif
+  }
 
 `;
 export default GlobalStyle;

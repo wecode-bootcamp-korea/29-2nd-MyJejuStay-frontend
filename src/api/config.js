@@ -5,4 +5,6 @@ export const api = {
   allProducts: BASE_URL + '/accommodations',
   socialLogin: LOGIN_URL + '/users/kakaologin',
   signUp: LOGIN_URL + '/users/signup',
+  fetchAccommList: BASE_URL + '/accommodations',
+  fetchAccommodationItem: BASE_URL + '/accommodations',
 };

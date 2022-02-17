@@ -1,29 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import DetailPageRating from './DetailPageRating';
 import DetailPageMapButton from './DetailPageMapButton';
 import styled from 'styled-components';
 
-const DetailPageHeader = () => {
-  const [accommodationData, setAccommodationData] = useState([]);
-  const [reviewData, setReviewData] = useState([]);
-  useEffect(() => {
-    fetch(
-      'data/DetailPage/DetailPageHeader/DetailPage_Accommodations_Data.json'
-    )
-      .then(res => res.json())
-      .then(res => {
-        setAccommodationData(res);
-      });
-  }, []);
-
-  useEffect(() => {
-    fetch('data/DetailPage/DetailPageHeader/DetailPage_Reviews_Data.json')
-      .then(res => res.json())
-      .then(res => setReviewData(res));
-  }, []);
-
+const DetailPageHeader = ({ accommodationData, reviewData }) => {
   return (
-    <div>
+    <StyledHeaderDiv>
       <StyledAccommodationSection>
         <StyledAccommodationHeader>
           <StyledAccommodationName>
@@ -36,15 +18,18 @@ const DetailPageHeader = () => {
         </StyledAccommodationDesc>
         <DetailPageRating score={reviewData[0]?.score} />
       </StyledAccommodationSection>
-    </div>
+    </StyledHeaderDiv>
   );
 };
 
 export default DetailPageHeader;
 
-const StyledAccommodationSection = styled.section`
-  width: 700px;
+const StyledHeaderDiv = styled.div`
+  width: 100%;
+  margin-bottom: 50px;
 `;
+
+const StyledAccommodationSection = styled.section``;
 
 const StyledAccommodationHeader = styled.div`
   display: flex;

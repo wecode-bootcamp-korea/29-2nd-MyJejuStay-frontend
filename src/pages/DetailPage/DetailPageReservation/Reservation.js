@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import ReservationPersonnelModal from './ReservationPersonnelModal/ReservationPersonnelModal';
 import DateRangeFilter from '../../ProductList/ProductListFilter/DateRangeFilter';
 import ReservationHeader from './ReservationHeader';
@@ -10,8 +10,7 @@ import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 
-const Reservation = () => {
-  const [accommodationData, setAccommodationData] = useState([]);
+const Reservation = ({ accommodationData }) => {
   const [isModalOpen, setIsModalOpen] = useState({
     isDateModalOpen: false,
     isPersonnelModalOpen: false,
@@ -54,15 +53,6 @@ const Reservation = () => {
     });
   };
 
-  useEffect(() => {
-    fetch(
-      'data/DetailPage/DetailPageHeader/DetailPage_Accommodations_Data.json'
-    )
-      .then(res => res.json())
-      .then(res => {
-        setAccommodationData(res);
-      });
-  }, []);
   return (
     <StyledBookingWrapper>
       <form>
@@ -161,6 +151,8 @@ export default Reservation;
 
 const StyledBookingWrapper = styled.div`
   width: 400px;
+  position: sticky;
+  top: 100px;
   border: 1px solid transparent;
   padding: 24px 28px 0;
   border-radius: 8px;

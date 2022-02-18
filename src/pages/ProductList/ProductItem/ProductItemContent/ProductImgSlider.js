@@ -24,10 +24,10 @@ const ProductImgSlider = ({ productInfo }) => {
 export default ProductImgSlider;
 
 const ProductImgWrap = styled.div`
-  max-width: 300px;
+  width: 300px;
   height: 200px;
   border-radius: 10px;
-  overflow: hidden;
+  border: none;
 `;
 
 const StyledSlider = styled(Slider)`
@@ -79,7 +79,9 @@ const StyledSlider = styled(Slider)`
 `;
 
 const ProductImg = styled.img`
-  width: 100%;
+  width: 300px;
   height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
   object-fit: cover;
 `;

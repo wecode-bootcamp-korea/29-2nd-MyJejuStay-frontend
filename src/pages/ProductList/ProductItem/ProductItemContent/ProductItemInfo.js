@@ -7,8 +7,9 @@ const ProductItemInfo = ({ productInfo }) => {
   return (
     <ProductInfoWrap>
       <div>
-        <ProductInfoTitle>{productInfo.region}</ProductInfoTitle>
-        <ProductInfoDesc>{productInfo.desc}</ProductInfoDesc>
+        <ProductInfoName>{productInfo.name}</ProductInfoName>
+        <ProductInfoAddress>{productInfo.address}</ProductInfoAddress>
+        <ProductInfoDesc>{productInfo.description}</ProductInfoDesc>
         <UnderLine />
         <ProductInfoFacilities>
           최대 인원 2명 · 원룸 · 침대 1개 · 단독 사용 욕식 1개
@@ -38,14 +39,23 @@ const ProductInfoWrap = styled.div`
   display: flex;
   width: 100%;
   margin-left: 15px;
+  padding: 4px 0;
   justify-content: space-between;
   flex-direction: column;
 `;
 
-const ProductInfoTitle = styled.h1`
+const ProductInfoAddress = styled.p`
   font-size: 13px;
   color: #717171;
   font-weight: 500;
+  line-height: 1.5;
+`;
+
+const ProductInfoName = styled.h1`
+  font-size: 16px;
+  color: #000000;
+  font-weight: 700;
+  line-height: 1.3;
 `;
 
 const ProductInfoDesc = styled.p`
@@ -53,7 +63,9 @@ const ProductInfoDesc = styled.p`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  color: #707070;
   font-size: 16px;
+  line-height: 1.7;
 `;
 
 const UnderLine = styled.div`
@@ -65,6 +77,7 @@ const UnderLine = styled.div`
 const ProductInfoFacilities = styled.p`
   font-size: 13px;
   color: #717171;
+  line-height: 1.5;
 `;
 const ProductInfoRatingWrap = styled.div`
   display: flex;

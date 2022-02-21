@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ThemeList } from '../../components/Nav/Theme';
 import styled from 'styled-components';
 
 const Main = () => {
@@ -20,28 +21,17 @@ const Main = () => {
       <MainVideo autoPlay muted loop>
         <source src="https://myjejustay.s3.ap-northeast-2.amazonaws.com/MyJejuStay.mp4" />
       </MainVideo>
-      {/* <video width="100%" height="100%" autoPlay muted loop>
-        <source src={MainVideo.mainvideo} />
-      </video> */}
 
       <MainContents>
         <MainHeader>당신의 쉼은 어디에 있나요?</MainHeader>
         <MainContetsBox>
-          <MainItem>
-            <MainLink to="/Productlist?themaGroup='해변'">
-              <MainLinkTitle>Ocean</MainLinkTitle>
-            </MainLink>
-          </MainItem>
-          <MainItem>
-            <MainLink to="/Productlist?themaGroup='숲'">
-              <MainLinkTitle>Forest</MainLinkTitle>
-            </MainLink>
-          </MainItem>
-          <MainItem>
-            <MainLink to="/Productlist?themaGroup='도심'">
-              <MainLinkTitle>City</MainLinkTitle>
-            </MainLink>
-          </MainItem>
+          {ThemeList.map(data => (
+            <MainItem key={data.id}>
+              <MainLink key={data.id} to={data.ThemeLink}>
+                <MainLinkTitle key={data.id}>{data.ThemeList}</MainLinkTitle>
+              </MainLink>
+            </MainItem>
+          ))}
         </MainContetsBox>
       </MainContents>
     </MainSection>
@@ -54,6 +44,7 @@ const MainSection = styled.section`
 `;
 
 const MainVideo = styled.video`
+  margin-top: 60px;
   width: 100%;
   height: 100%;
 `;
@@ -97,9 +88,9 @@ const MainItem = styled.div`
   width: 200px;
   height: 100px;
   margin: 20px;
-  border-radius: 8px;
+  border-radius: 2px;
+  border: 1px solid white;
   text-align: center;
-  border: 2px solid white;
   align-items: center;
   justify-content: space-around;
   &:hover {

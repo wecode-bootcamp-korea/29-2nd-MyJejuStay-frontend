@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav/Nav';
+import Modal from 'react-modal';
 import Main from './pages/Main/Main';
 import ProductList from './pages/ProductList/ProductList';
 import DetailPageHeader from './pages/DetailPage/DetailPageHeader/DetailPageHeader';
@@ -21,5 +22,7 @@ const Router = () => {
     </BrowserRouter>
   );
 };
+
+Modal.setAppElement('#root');
 
 export default Router;

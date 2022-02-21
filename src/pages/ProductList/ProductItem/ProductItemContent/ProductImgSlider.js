@@ -3,7 +3,7 @@ import styled from 'styled-components/macro';
 import Slider from 'react-slick';
 
 const ProductImgSlider = ({ productInfo }) => {
-  const imgs = productInfo.imgs;
+  const imgs = productInfo.image_url;
   let settings = {
     dots: true,
     infinite: true,

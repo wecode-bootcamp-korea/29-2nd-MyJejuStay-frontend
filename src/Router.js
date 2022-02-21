@@ -5,6 +5,7 @@ import Modal from 'react-modal';
 import Main from './pages/Main/Main';
 import ProductList from './pages/ProductList/ProductList';
 import DetailPageHeader from './pages/DetailPage/DetailPageHeader/DetailPageHeader';
+import MyPage from './pages/MyPage/MyPage';
 import SignUp from './pages/SignUp/SignUp';
 import Footer from './components/Footer/Footer';
 
@@ -17,6 +18,7 @@ const Router = () => {
         <Route path="/productlist" element={<ProductList />} />
         <Route path="/detail" element={<DetailPageHeader />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/mypage" element={<MyPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

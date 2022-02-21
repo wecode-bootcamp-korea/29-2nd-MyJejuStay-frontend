@@ -53,6 +53,7 @@ const NavSection = styled.section`
   height: 60px;
   background-color: white;
   color: black;
+  z-index: 9999;
 `;
 
 const LogoLink = styled(Link)`

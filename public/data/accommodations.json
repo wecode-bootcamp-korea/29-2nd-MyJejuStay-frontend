@@ -10,7 +10,7 @@
       "rating": "4.87",
       "comments": "15",
       "term": "4월 9일~15일",
-      "imgs": [
+      "image_url": [
         "/images/productlist/nature1.jpg",
         "/images/productlist/nature2.jpg",
         "/images/productlist/nature3.jpg",
@@ -30,7 +30,7 @@
       "rating": "4.21",
       "comments": "355",
       "term": "4월 23일~30일",
-      "imgs": [
+      "image_url": [
         "/images/productlist/nature1.jpg",
         "/images/productlist/nature2.jpg",
         "/images/productlist/nature3.jpg",
@@ -50,7 +50,7 @@
       "rating": "4.97",
       "comments": "61",
       "term": "5월 7일~14일",
-      "imgs": [
+      "image_url": [
         "/images/productlist/nature1.jpg",
         "/images/productlist/nature2.jpg",
         "/images/productlist/nature3.jpg",
@@ -70,7 +70,7 @@
       "rating": "4.87",
       "comments": "15",
       "term": "4월 9일~15일",
-      "imgs": [
+      "image_url": [
         "/images/productlist/nature1.jpg",
         "/images/productlist/nature2.jpg",
         "/images/productlist/nature3.jpg",
@@ -90,7 +90,7 @@
       "rating": "4.87",
       "comments": "15",
       "term": "4월 9일~15일",
-      "imgs": [
+      "image_url": [
         "/images/productlist/nature1.jpg",
         "/images/productlist/nature2.jpg",
         "/images/productlist/nature3.jpg",
@@ -110,7 +110,7 @@
       "rating": "4.87",
       "comments": "15",
       "term": "4월 9일~15일",
-      "imgs": [
+      "image_url": [
         "/images/productlist/nature1.jpg",
         "/images/productlist/nature2.jpg",
         "/images/productlist/nature3.jpg",

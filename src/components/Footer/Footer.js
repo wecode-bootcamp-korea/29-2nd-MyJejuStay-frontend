@@ -65,7 +65,7 @@ const CompanyInfoList = styled.li`
   }
 `;
 
-const Others = styled.li`
+const Others = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -3,12 +3,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Modal from 'react-modal';
 import Nav from './components/Nav/Nav';
 import Main from './pages/Main/Main';
-import ProductList from './pages/ProductList/ProductList';
-import MyPage from './pages/MyPage/MyPage';
-import Footer from './components/Footer/Footer';
+import SignUp from './pages/Members/SignUp';
+import Login from './pages/Members/Login';
 import App from './pages/KaKao/App';
 import Auth from './pages/KaKao/Auth';
+import ProductList from './pages/ProductList/ProductList';
+import MyPage from './pages/MyPage/MyPage';
 import DetailPage from './pages/DetailPage/DetailPage';
+import Footer from './components/Footer/Footer';
 
 const Router = () => {
   return (
@@ -16,11 +18,13 @@ const Router = () => {
       <Nav />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/productlist" element={<ProductList />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/app" element={<App />} />
         <Route path="/oauth/kakao/callback" element={<Auth />} />
-        <Route path="/mypage/*" element={<MyPage />} />
         <Route path="/detail/:accommodationId" element={<DetailPage />} />
+        <Route path="/productlist" element={<ProductList />} />
+        <Route path="/mypage/*" element={<MyPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

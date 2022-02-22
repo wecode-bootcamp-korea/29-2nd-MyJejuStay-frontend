@@ -28,7 +28,7 @@ function Nav() {
           <DropdownContainer
             // onMouseOver={() => setDisplay(0)}
             onMouseLeave={() => setDisplay('')}
-            display={display === 0 ? true : false}
+            show={display === 0 ? true : false}
           >
             {ThemeList.map(data => (
               <DropdownContent to={data.ThemeLink} key={data.id}>
@@ -95,7 +95,7 @@ const MenuText = styled.div`
   padding-right: 10px;
 `;
 const DropdownContainer = styled.div`
-  display: ${props => (props.display ? 'flex' : 'none')};
+  display: ${props => (props.show ? 'flex' : 'none')};
   flex-direction: column;
   justify-content: space-evenly;
   background-color: white;

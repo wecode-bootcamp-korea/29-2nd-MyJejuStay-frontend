@@ -35,16 +35,17 @@ const Auth = () => {
           if (data) {
             try {
               sessionStorage.setItem('token', data.token);
+              alert('로그인 성공하였습니다!');
+              navigate('/');
             } catch (err) {
               alert(err);
             }
           } else {
-            // signup에서 login으로 변경하기
             alert('로그인 실패하였습니다.');
-            navigate('/signup');
+            navigate('/login');
           }
         });
-      navigate('/');
+      // navigate('/');
     } catch (err) {
       alert(err);
     }
@@ -52,7 +53,7 @@ const Auth = () => {
 
   getToken();
 
-  return <div>로딩중입니다...</div>;
+  return null;
 };
 
 export default Auth;

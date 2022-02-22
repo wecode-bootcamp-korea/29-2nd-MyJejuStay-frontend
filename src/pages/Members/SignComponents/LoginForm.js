@@ -81,7 +81,11 @@ const LoginForm = props => {
             handleInput={handleInput}
           />
         ))}
-        <Button isValidate={isValidate} clickLoginButton={clickLoginButton} />
+        <Button
+          title={title}
+          isValidate={isValidate}
+          clickLoginButton={clickLoginButton}
+        />
       </FormLayout>
     </LoginBody>
   );

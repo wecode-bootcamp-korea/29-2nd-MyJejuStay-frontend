@@ -4,11 +4,12 @@ import styled from 'styled-components';
 const DetailPagePhoto = ({ accommodationData }) => {
   return (
     <StyledDetailImgSection>
-      {accommodationData[0]?.image_url.map((data, index) => (
-        <StyledDetailImgDiv key={index}>
-          <StyledDetailImg alt="숙소사진" key={index} src={data} />
-        </StyledDetailImgDiv>
-      ))}
+      {accommodationData[0] &&
+        accommodationData[0].image_url.map((data, index) => (
+          <StyledDetailImgDiv key={index}>
+            <StyledDetailImg alt="숙소사진" key={index} src={data} />
+          </StyledDetailImgDiv>
+        ))}
     </StyledDetailImgSection>
   );
 };

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import DetailPageInfoCheckInOut from './DetailPageInfoCheckInOut';
-import { api } from '../../../api/config';
 
 const DetailPageInfo = ({ accommodationData }) => {
   return (

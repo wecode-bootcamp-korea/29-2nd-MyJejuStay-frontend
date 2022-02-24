@@ -64,7 +64,6 @@ const FilterModal = ({
       } else {
         queryThemes += `&themaGroup=${theme}`;
       }
-
       return queryThemes;
     });
     const finalCheck = theme.length > 0 ? theme[theme.length - 1] : '?' + null;
@@ -72,6 +71,8 @@ const FilterModal = ({
     const allQueryParams = isVerified
       ? `${finalCheck}&isVerified=1`
       : `${finalCheck}`;
+
+    setIsVerified(false);
 
     return allQueryParams;
   };
@@ -104,6 +105,7 @@ const FilterModal = ({
             <FilterCheckLabel htmlFor={i}>{loc}</FilterCheckLabel>
           </CheckBoxWrap>
         ))}
+        <ToggleVerified>인증된 숙소만 보기</ToggleVerified>
         <Toggle onChange={toggleHandler} />
       </ModalContentWarp>
       <ModalFooter>
@@ -155,4 +157,9 @@ const FilterSubmitBtn = styled.button`
   border-radius: 8px;
   border: none;
   cursor: pointer;
+`;
+
+const ToggleVerified = styled.p`
+  font-size: 20px;
+  margin: 20px 0 10px 0;
 `;

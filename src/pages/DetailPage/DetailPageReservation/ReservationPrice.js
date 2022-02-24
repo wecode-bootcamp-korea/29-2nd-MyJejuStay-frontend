@@ -3,11 +3,9 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWonSign } from '@fortawesome/free-solid-svg-icons';
 
-const ReservationPrice = ({ price, range }) => {
-  const rangeSplit = range.split('/');
+const ReservationPrice = ({ price, endDate, startDate }) => {
   const bookingDays =
-    (new Date(rangeSplit[1]).getTime() - new Date(rangeSplit[0]).getTime()) /
-    (1000 * 60 * 60 * 24);
+    (endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24);
   const totalPrice = price * bookingDays;
   const saleRate = 0.3;
   const discountedPrice = saleRate * totalPrice;

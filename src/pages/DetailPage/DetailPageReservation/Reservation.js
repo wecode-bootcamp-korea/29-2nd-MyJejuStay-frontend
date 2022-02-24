@@ -53,6 +53,23 @@ const Reservation = ({ accommodationData }) => {
     });
   };
 
+  const buttonSubmit = e => {
+    e.preventDefault();
+    fetch(`http://10.58.7.130:8000/accommodations/1`, {
+      method: 'POST',
+      headers: {
+        authorization:
+          'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NH0.k1rvTjLnv_Y__aojHjigGidGi7GDB_8PFz-ouz9SCrs',
+      },
+      body: JSON.stringify({
+        numberOfAdult: adultPersonnel,
+        numberOfChildren: childPersonnel,
+        checkInDate: startDate,
+        checkOutDate: endDate,
+      }),
+    });
+  };
+
   return (
     <StyledBookingWrapper>
       <form>
@@ -108,33 +125,20 @@ const Reservation = ({ accommodationData }) => {
                   />
                 )}
               </div>
-              {/* <Modal
-                isOpen={isPersonnelModalOpen}
-                onRequestClose={closePersonnelModal}
-                style={customStyles}
-                contentLabel="Personnel Modal"
-              >
-                <ReservationPersonnelModal
-                  closeModal={closePersonnelModal}
-                  personnel={personnel}
-                  totalPersonnel={totalPersonnel}
-                  handlePersonnelPlusBtn={handlePersonnelPlusBtn}
-                  handlePersonnelMinusBtn={handlePersonnelMinusBtn}
-                />
-              </Modal> */}
             </StyledPersonnelWrapper>
           </StyledDateAndPersonnelRow>
           {range === '날짜를 선택해주세요' || totalPersonnel === 0 ? null : (
             <ReservationPrice
+              startDate={startDate}
+              endDate={endDate}
               price={accommodationData[0]?.price}
-              finalPrice={accommodationData[0]?.total_price}
-              discountedPrice={accommodationData[0]?.discounted_price}
-              range={range}
             />
           )}
         </div>
         <ReservationContent range={range} totalPersonnel={totalPersonnel} />
-        <StyledReservationButton>예약 가능 여부 확인</StyledReservationButton>
+        <StyledReservationButton onClick={buttonSubmit}>
+          예약 가능 여부 확인
+        </StyledReservationButton>
       </form>
       <StyledAddInfoWrapper>
         <FontAwesomeIcon icon={faTriangleExclamation} />

@@ -4,36 +4,27 @@ import DetailPagePhoto from './DetailPagePhoto/DetailPagePhoto';
 import DetailPageHeader from './DetailPageHeader/DetailPageHeader';
 import DetailPageInfo from './DetailPageInfo/DetailPageInfo';
 import DetailPageReservation from './DetailPageReservation/Reservation';
+import Review from './Review/Review';
 
 const DetailPage = () => {
   const [accommodationData, setAccommodationData] = useState([]);
-  const [reviewData, setReviewData] = useState([]);
 
   useEffect(() => {
-    fetch(
-      'data/DetailPage/DetailPageHeader/DetailPage_Accommodations_Data.json'
-    )
+    fetch('http://10.58.7.130:8000/accommodations/1')
       .then(res => res.json())
       .then(res => {
-        setAccommodationData(res);
+        setAccommodationData(res.message);
       });
   }, []);
 
-  useEffect(() => {
-    fetch('data/DetailPage/DetailPageHeader/DetailPage_Reviews_Data.json')
-      .then(res => res.json())
-      .then(res => setReviewData(res));
-  }, []);
   return (
     <div>
       <DetailPagePhoto accommodationData={accommodationData} />
       <StyledDetailPageSection>
         <StyledDetailPageContent>
-          <DetailPageHeader
-            accommodationData={accommodationData}
-            reviewData={reviewData}
-          />
+          <DetailPageHeader accommodationData={accommodationData} />
           <DetailPageInfo accommodationData={accommodationData} />
+          <Review />
         </StyledDetailPageContent>
         <aside>
           <DetailPageReservation accommodationData={accommodationData} />

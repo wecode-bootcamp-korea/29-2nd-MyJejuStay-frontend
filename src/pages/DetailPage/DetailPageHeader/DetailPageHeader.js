@@ -3,7 +3,7 @@ import DetailPageRating from './DetailPageRating';
 import DetailPageMapButton from './DetailPageMapButton';
 import styled from 'styled-components';
 
-const DetailPageHeader = ({ accommodationData, reviewData }) => {
+const DetailPageHeader = ({ accommodationData }) => {
   return (
     <StyledHeaderDiv>
       <StyledAccommodationSection>
@@ -16,7 +16,7 @@ const DetailPageHeader = ({ accommodationData, reviewData }) => {
         <StyledAccommodationDesc>
           {accommodationData[0]?.description}
         </StyledAccommodationDesc>
-        <DetailPageRating score={reviewData[0]?.score} />
+        <DetailPageRating score={accommodationData[0]?.reviews[0].rate.score} />
       </StyledAccommodationSection>
     </StyledHeaderDiv>
   );

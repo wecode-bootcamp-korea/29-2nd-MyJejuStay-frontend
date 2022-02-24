@@ -21,6 +21,7 @@ const Router = () => {
         <Route path="/oauth/kakao/callback" element={<Auth />} />
         <Route path="/mypage/*" element={<MyPage />} />
         <Route path="/detail/:accommodationId" element={<DetailPage />} />
+        <Route path="" element={<DetailPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

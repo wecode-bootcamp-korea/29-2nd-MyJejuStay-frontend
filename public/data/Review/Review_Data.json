@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "name": "우연재",
+    "description": "시인의 숨결이 담긴, 하글과 바람과 별과 시",
+    "detail_description": "숙소 소개\n안녕하세요!\n아름다운 산방산과 신비로운 안덕계곡이 흐르는\n아무도 간섭받지 않고 조용히 힐링하는 에코그린 리조트입니다.\n[🍖 바베큐]\n- 이용요금 : 3만원\n- 제공품목 : 그릴, 숯, 불판, 가스자동토치, 부탄가스, 장갑, 집게, 가위 등\n- 유의사항 : 고기 등 음식은 직접 준비 필요\n[📍 숙소 주변 관광지]\n화순해수욕장, 산방산, 중문관광단지, 용머리해안, 오설록, 카멜리아힐, 조각공원",
+    "price": "96000.00",
+    "address": "제주시 한림읍 귀덕 6길 94",
+    "region": "제주시",
+    "is_verifeid": true,
+    "latitude": "33.4357014",
+    "longtitude": "126.2915661",
+    "check_in_time": "14:00:00",
+    "check_out_time": "11:00:00",
+    "image_url": [
+      "https://images.unsplash.com/photo-1616285677522-8cf9274a0e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
+      "https://images.unsplash.com/photo-1616285677522-8cf9274a0e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
+      "https://images.unsplash.com/photo-1616285677522-8cf9274a0e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+    ],
+    "thema_group": ["해변"],
+    "reviews": [
+      {
+        "user_name": "이은주",
+        "comment": "역대급 숙소였어요! 제가 살다살다 이런 제주 돌담집에서의 반전매력을 느낄 수 있는 숙소에 머물게 되다니! 인스타 감성도, 제주의 감성도 숙소 한 곳에서 다 느낄 수 있다니! 큰 감동이 몰려왔네요. 가격은 부담스러울 수 있지만, 내부에서는 제주도 갬성이 물씬났어요. 한국적인 정서도 느껴졌고, 유서깊은 자리에 자리잡은 명망있는 숙소라는 생각에 숙소 나가기보다 안에서의 생활을 더 행복하게 보냈던 것 같아요. 후회없는 선택이었어요!",
+        "rate": 5,
+        "image_url": "https://images.unsplash.com/photo-1551105378-78e609e1d468?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+        "review_id": 1,
+        "created_at": "2022-02-19T21:20:29.697"
+      },
+      {
+        "user_name": "주신남",
+        "comment": "양이는 너무 귀여웠는데 숙소는 조금 아쉬웠어요. 너무 외진곳에 있어서 슈퍼 가기가 너무 힘들었습니다. 저희 같은 뚜벅이에게는 택시가 유일한데 8시가 넘으면 택시도 없어서 첫 날 저녁을 굶었네요. 물론 제 잘못도 있지만, 이런 부분이 미리 상세하게 안내되었다면 좋았을 거 같습니다.",
+        "rate": 3,
+        "image_url": "https://images.unsplash.com/photo-1644067233394-f79a616cc7ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUyfHxyb29tJTIwc3VufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+        "review_id": 2,
+        "created_at": "2022-02-19T21:20:29.701"
+      },
+      {
+        "user_name": "남정연",
+        "comment": "늘 호텔주차는 불편했는데 기계식이지만 관리자분이 알아서 주차해주시고 프런트에 미리 전화해두면 출차는 기다림없이 나갈 수 있는게 좋았습니다. 룸 컨디션이 좋고 화장대가 넓어서 룸안의 동선에 불편함이 전혀없었어요!",
+        "rate": 4,
+        "image_url": "https://images.unsplash.com/photo-1635071820831-2ff32c21d82f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ0fHxyb29tJTIwc3VufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+        "review_id": 3,
+        "created_at": "2022-02-19T20:41:10.838"
+      }
+    ]
+  }
+]

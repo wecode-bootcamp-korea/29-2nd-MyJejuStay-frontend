@@ -10,7 +10,7 @@ import UserInfo from './UserInfo';
 import styled from 'styled-components';
 
 function Nav() {
-  const [display, setDisplay] = useState('');
+  const [display, setDisplay] = useState(false);
 
   return (
     <NavSection>
@@ -26,8 +26,7 @@ function Nav() {
           <MenuText>어디로 떠날까요?</MenuText>
           <FontAwesomeIcon icon={faMapLocationDot} />
           <DropdownContainer
-            // onMouseOver={() => setDisplay(0)}
-            onMouseLeave={() => setDisplay('')}
+            onMouseLeave={() => setDisplay(false)}
             show={display === 0 ? true : false}
           >
             {ThemeList.map(data => (

@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import Select from 'react-select';
 
 const options = [
-  { value: 'lowest', label: '낮은가격순' },
-  { value: 'highest', label: '높은가격순' },
-  { value: 'newest', label: '최신순' },
+  { value: 'price', label: '낮은가격순' },
+  { value: '-price', label: '높은가격순' },
+  { value: 'created_at', label: '최신순' },
 ];
 const FilterSort = () => {
   const navigate = useNavigate();

@@ -4,6 +4,7 @@ import styled from 'styled-components/macro';
 import ProductListFilter from './ProductListFilter/ProductListFilter';
 import FilterSort from './ProductListFilter/FilterSort';
 import ProductItem from './ProductItem/ProductItem';
+import MapContainer from './ProductMap/MapContainer';
 import { api } from '../../api/config';
 
 const ProductList = () => {
@@ -32,7 +33,7 @@ const ProductList = () => {
             ))}
         </ProductItemsWrap>
         <ProductListMapWrapper>
-          {/* <ProductMap productInfos={productInfos} /> */}
+          <MapContainer productInfos={productInfos} />
         </ProductListMapWrapper>
       </ProductListContentsWrap>
     </ProductListWrap>
@@ -41,7 +42,9 @@ const ProductList = () => {
 
 export default ProductList;
 
-const ProductListWrap = styled.div``;
+const ProductListWrap = styled.div`
+  margin-bottom: 100px;
+`;
 
 const ProductFilterWrap = styled.div`
   position: fixed;
@@ -63,9 +66,9 @@ const ProductItemsWrap = styled.div`
 `;
 
 const ProductListMapWrapper = styled.div`
-  position: fixed;
+  position: sticky;
+  top: 226px;
   left: 51%;
   width: calc(100% - 51%);
-  height: calc(100vh - 120px);
-  background-color: skyblue;
+  height: calc(100vh - 220px);
 `;

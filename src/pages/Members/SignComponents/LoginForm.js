@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { api } from '../../../api/config';
 import FormLayout from './FormLayout';
 import Input from './Input';
@@ -8,7 +8,10 @@ import styled from 'styled-components';
 
 const LoginForm = props => {
   const { title, inputData } = props;
+  const location = useLocation();
   const navigate = useNavigate();
+
+  useEffect(() => {}, [location]);
 
   const [inputValues, setInputValues] = useState({
     email: '',
@@ -47,6 +50,7 @@ const LoginForm = props => {
             sessionStorage.setItem('token', result.token);
             alert('로그인 성공!');
             navigate('/');
+            window.locaion.reload();
           } catch (err) {
             alert(err);
           }

@@ -12,7 +12,7 @@ export default function SignUp() {
 const SIGNUP_DATA = [
   {
     name: 'name',
-    text: '이름 *',
+    text: '이름을 영어로 입력해주세요 *',
     type: 'text',
     placeholder: '이름을 입력해주세요.',
   },

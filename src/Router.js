@@ -11,10 +11,12 @@ import ProductList from './pages/ProductList/ProductList';
 import MyPage from './pages/MyPage/MyPage';
 import DetailPage from './pages/DetailPage/DetailPage';
 import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 const Router = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Nav />
       <Routes>
         <Route path="/" element={<Main />} />

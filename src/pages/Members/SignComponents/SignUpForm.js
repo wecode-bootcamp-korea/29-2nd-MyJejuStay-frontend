@@ -44,7 +44,8 @@ const SignUpForm = props => {
       : setIsValidate(false);
   };
 
-  const clickButton = () => {
+  const clickButton = e => {
+    e.preventDefault();
     fetch(`${api.signUp}`, {
       method: 'POST',
       body: JSON.stringify({
@@ -55,7 +56,10 @@ const SignUpForm = props => {
       }),
     })
       .then(response => response.json())
-      .then(result => navigate('/'));
+      .then(result => {
+        alert('회원가입에 성공하였습니다.');
+        navigate('/');
+      });
   };
 
   useEffect(() => {

@@ -1,13 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components/macro';
 import ProductImgSlider from './ProductItemContent/ProductImgSlider';
 import ProductItemInfo from './ProductItemContent/ProductItemInfo';
 
 const ProductItem = ({ productInfo }) => {
+  const navigate = useNavigate();
+
+  const goToDetail = () => {
+    navigate(`/detail/${productInfo.id}`);
+  };
   return (
     <ProductItemWrap>
       <ProductImgSlider productInfo={productInfo} />
-      <ProductItemInfo productInfo={productInfo} />
+      <ProductItemInfo goToDetail={goToDetail} productInfo={productInfo} />
     </ProductItemWrap>
   );
 };

@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const ProductItemInfo = ({ productInfo }) => {
+const ProductItemInfo = ({ productInfo, goToDetail }) => {
   return (
-    <ProductInfoWrap>
+    <ProductInfoWrap onClick={goToDetail}>
       <div>
         <ProductInfoName>{productInfo.name}</ProductInfoName>
         <ProductInfoAddress>{productInfo.address}</ProductInfoAddress>
@@ -23,7 +23,7 @@ const ProductItemInfo = ({ productInfo }) => {
           <FontAwesomeIcon icon={faStar} className="star" />
           <ProductInfoRatingTextWrap>
             <ProductInfoRatingNumber>
-              {productInfo.price}
+              {Number(productInfo.price).toLocaleString()}
             </ProductInfoRatingNumber>
             <ProductInfoReviewCount> (후기 29개)</ProductInfoReviewCount>
           </ProductInfoRatingTextWrap>
@@ -84,7 +84,7 @@ const ProductInfoRatingWrap = styled.div`
   align-items: center;
 
   .star {
-    color: #ff385c;
+    color: #51abf3;
   }
 `;
 

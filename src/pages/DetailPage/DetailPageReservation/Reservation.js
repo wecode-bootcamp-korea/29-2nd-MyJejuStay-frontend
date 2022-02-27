@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
+import { api } from '../../../api/config';
 
 const Reservation = ({ accommodationData }) => {
   const [isModalOpen, setIsModalOpen] = useState({
@@ -55,7 +56,7 @@ const Reservation = ({ accommodationData }) => {
 
   const buttonSubmit = e => {
     e.preventDefault();
-    fetch(`http://10.58.7.130:8000/accommodations/1`, {
+    fetch(`${api.fetchAccommList}/2`, {
       method: 'POST',
       headers: {
         authorization:
@@ -67,7 +68,17 @@ const Reservation = ({ accommodationData }) => {
         checkInDate: startDate,
         checkOutDate: endDate,
       }),
-    });
+    })
+      .then(res => res.json())
+      .then(res => {
+        if (res.message === 'MINIMUM_STAY: {29}') {
+          alert('신청한 숙박일수가 최소 숙박일수보다 적습니다!');
+        } else if (res.message === 'ROOM_IS_FULL') {
+          alert('이미 예약이 차있습니다! 다른 날짜로 예약해주세요.');
+        } else {
+          alert('예약이 완료되었습니다!');
+        }
+      });
   };
 
   return (

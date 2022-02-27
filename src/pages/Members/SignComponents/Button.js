@@ -2,14 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 
 export default function Button(props) {
-  const { title, isValidate, clickLoginButton } = props;
+  const { title, isValidate, clickLoginButton, clickButton } = props;
   const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?&client_id=${process.env.REACT_APP_REST_API_KEY}&redirect_uri=${process.env.REACT_APP_REDIRECT_URI}&response_type=code`;
 
   return (
     <>
       <div className="Button">
         <ButtonWrap>
-          <SignUpButton disabled={!isValidate} onClick={clickLoginButton}>
+          <SignUpButton
+            disabled={!isValidate}
+            onClick={clickLoginButton ? clickLoginButton : clickButton}
+          >
             {title === '로그인' ? '로그인하기' : '동의하고 가입하기'}
           </SignUpButton>
         </ButtonWrap>

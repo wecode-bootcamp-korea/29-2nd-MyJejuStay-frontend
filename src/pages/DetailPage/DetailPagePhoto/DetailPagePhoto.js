@@ -31,6 +31,6 @@ const StyledDetailImgDiv = styled.div`
 
 const StyledDetailImg = styled.img`
   width: 100%;
-  heigth: 100%;
+  height: 100%;
   object-fit: cover;
 `;

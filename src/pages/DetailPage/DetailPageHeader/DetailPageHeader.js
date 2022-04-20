@@ -4,6 +4,7 @@ import DetailPageMapButton from './DetailPageMapButton';
 import styled from 'styled-components';
 
 const DetailPageHeader = ({ accommodationData }) => {
+  const score = 4.2;
   return (
     <StyledHeaderDiv>
       <StyledAccommodationSection>
@@ -16,7 +17,7 @@ const DetailPageHeader = ({ accommodationData }) => {
         <StyledAccommodationDesc>
           {accommodationData[0]?.description}
         </StyledAccommodationDesc>
-        <DetailPageRating score={accommodationData[0]?.reviews[0].rate.score} />
+        <DetailPageRating score={score} />
       </StyledAccommodationSection>
     </StyledHeaderDiv>
   );

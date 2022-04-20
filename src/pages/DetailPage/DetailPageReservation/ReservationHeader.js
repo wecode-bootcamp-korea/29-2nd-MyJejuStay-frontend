@@ -4,12 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWonSign } from '@fortawesome/free-solid-svg-icons';
 
 const ReservationHeader = ({ price, minimumStay }) => {
+  const headerPrice = price * minimumStay;
   return (
     <div>
       <div>
         <StyledPrice>
           <FontAwesomeIcon icon={faWonSign} />
-          {price * minimumStay}
+          {headerPrice.toLocaleString()}
         </StyledPrice>
         <StyledMinStay> / {minimumStay}박 금액</StyledMinStay>
       </div>

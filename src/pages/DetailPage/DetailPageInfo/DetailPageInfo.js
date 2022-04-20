@@ -5,7 +5,7 @@ import DetailPageInfoCheckInOut from './DetailPageInfoCheckInOut';
 const DetailPageInfo = ({ accommodationData }) => {
   return (
     <StyledInfoDiv>
-      <StyledAccomodationInfoTitle>숙소정보</StyledAccomodationInfoTitle>
+      <StyledAccommodationInfoTitle>숙소정보</StyledAccommodationInfoTitle>
       <StyledCheckWrapper>
         {ACCOMMODATION_DATA_TITLE.map(({ id, title, label }) => {
           return (
@@ -61,7 +61,47 @@ const DetailPageInfo = ({ accommodationData }) => {
       <div>
         <StyledIntro>숙소 소개</StyledIntro>
         <StyledIntroContent>
-          {accommodationData[0]?.detail_description}
+          {/* {accommodationData[0]?.detail_description} */}
+          여기, 이디오라게에서 소중한 사람들과 아름다운 추억 남기시길 바랍니다.
+          <br />
+          <br />
+          서귀포시 하예동(난드르)에 위치한 저희 이디오라게 펜션은 <br />
+          모던한 호텔 분위기의 깨끗함을 갖춘 제주도 펜션입니다. <br />
+          <br />
+          저희 펜션은 하예동(난드르) 해안 가까이 있어 석양과 일출을 즐기기에
+          적합하여 <br />
+          하예동(난드르)의 주상절리 박수기정이 모든 객실에서 보여 <br />
+          제주도의 자연을 즐기기에 최고입니다. <br />
+          <br />
+          내부 인테리어도 모던하면서 호텔 느낌의 분위기를 연출해
+          <br />
+          사랑하는 가족, 연인, 친구들과의 여행에 특별함을 선물할 것입니다.{' '}
+          <br />
+          각종 부대시설 완비를 통해 이용하시는 고객님들이 사용하기 적합합니다.
+          <br />
+          <br />
+          가족들도 머물 수 있는 넓고 쾌적한 숙소부터 <br />
+          연인이 머물 수 있는 아기자기한 숙소까지 <br />
+          다양한 고객님들이 머물 수 있는 저희 펜션은 <br />
+          제주 여행에서 특별한 추억을 선물할 것입니다. <br />
+          [📢 안내사항]
+          <br /> -기준인원 초과 시, 추가요금 발생
+          <br /> -집합금지 기간 중 5인이상 숙박 시 가족관계를 증명할 서류 지참
+          필수
+          <br /> -침구 제공
+          <br /> -연휴 : 20.12.24~12.27 / 12.31~21.1.3 / 2.10~2.14 / 2.26~3.1
+          <br />
+          <br /> [📍 숙소 주변 관광지] -세화해변, 용머리해안, 중문관광단지
+          <br /> *22시 이후 입실 시, 사전 연락 필수
+          <br />
+          <br /> [🏡 숙소시설] -이디오라게 카페
+          <br />
+          <br /> [🍖 바베큐 이용]
+          <br /> -이용요금 : 2만원 (4인기준)
+          <br /> -그릴, 숯, 가위, 집게, 장갑 제공
+          <br /> *집합금지 기간 중 이용 불가 [🏊‍♀️ 어린이 수영장]
+          <br /> -이용기간 : 하절기 (문의 필요)
+          <br /> -성인은 입장 불가 (보호자는 동반가능)
         </StyledIntroContent>
       </div>
     </StyledInfoDiv>
@@ -73,7 +113,7 @@ const StyledInfoDiv = styled.div`
   margin-bottom: 30px;
 `;
 
-const StyledAccomodationInfoTitle = styled.div`
+const StyledAccommodationInfoTitle = styled.div`
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 40px;
@@ -88,14 +128,18 @@ const StyledIntro = styled.h3`
   font-size: 20px;
 `;
 
-const StyledIntroContent = styled.p``;
+const StyledIntroContent = styled.p`
+  line-height: 25px;
+`;
 
 const StyledRule = styled.div`
   margin: 40px 0px;
   font-size: 20px;
 `;
 
-const StyledRuleContent = styled.p``;
+const StyledRuleContent = styled.p`
+  line-height: 20px;
+`;
 
 const ACCOMMODATION_DATA_TITLE = [
   {

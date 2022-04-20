@@ -8,6 +8,7 @@ const ReservationPrice = ({ price, endDate, startDate }) => {
     (endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24);
   const totalPrice = price * bookingDays;
   const saleRate = 0.3;
+  const dayPrice = ((price * 1000) / 1000).toLocaleString();
   const discountedPrice = saleRate * totalPrice;
   const finalPrice = totalPrice - discountedPrice;
   return (
@@ -19,12 +20,12 @@ const ReservationPrice = ({ price, endDate, startDate }) => {
               <span>기존가</span>
               <StyledHowLong>
                 (<FontAwesomeIcon icon={faWonSign} />
-                {price} x {bookingDays}박)
+                {dayPrice} x {bookingDays}박)
               </StyledHowLong>
             </StyledPriceLabel>
             <StyledPriceData>
               <FontAwesomeIcon icon={faWonSign} />
-              <del>{totalPrice}</del>
+              <del>{totalPrice.toLocaleString()}</del>
             </StyledPriceData>
           </StyledPriceRow>
           <StyledPriceRow>
@@ -34,7 +35,7 @@ const ReservationPrice = ({ price, endDate, startDate }) => {
             <StyledPriceData>
               <StyledSale>
                 - <FontAwesomeIcon icon={faWonSign} />
-                {discountedPrice}
+                {discountedPrice.toLocaleString()}
               </StyledSale>
             </StyledPriceData>
           </StyledPriceRow>
@@ -42,7 +43,7 @@ const ReservationPrice = ({ price, endDate, startDate }) => {
             <StyledPriceLabel>최종 금액(TAX 포함)</StyledPriceLabel>
             <StyledFinalPriceData>
               <FontAwesomeIcon icon={faWonSign} />
-              {finalPrice}
+              {finalPrice.toLocaleString()}
             </StyledFinalPriceData>
           </StyledFinalPrice>
         </StyledPriceTableBody>

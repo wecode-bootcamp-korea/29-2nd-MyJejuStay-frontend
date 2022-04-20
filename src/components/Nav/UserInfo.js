@@ -5,6 +5,10 @@ import styled from 'styled-components';
 const UserInfo = () => {
   const handleLogOUt = () => {
     sessionStorage.removeItem('token');
+    window.reload();
+  };
+  const handleLogIn = () => {
+    window.reload();
   };
 
   return (
@@ -28,7 +32,9 @@ const UserInfo = () => {
       ) : (
         <>
           <UserInfoList>
-            <UserInfoLink to="/login">LOGIN</UserInfoLink>
+            <UserInfoLink to="/login" onClick={handleLogIn}>
+              LOGIN
+            </UserInfoLink>
           </UserInfoList>
           <UserInfoList>
             <UserInfoLink to="/signup">SIGNUP</UserInfoLink>

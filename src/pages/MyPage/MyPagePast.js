@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
+import { BASE_URL } from '../../api/config';
 import styled from 'styled-components';
 
 function MyPagePast() {
   const [detailInformation, setDetailInformation] = useState([]);
-  // useEffect(() => {
-  //   fetch(`http://10.58.4.204:8000/users/mypage`, {
-  //     method: 'get',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //       Authorization:
-  //         'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0.WgDrUj6df_iJkOoZ5e_j9x9p-GPwuPq41HTQQ_jlNX8',
-  //     },
-  //   })
-  //     .then(res => res.json())
-  //     .then(data => setDetailInformation(data.result));
-  // }, []);
+  useEffect(() => {
+    fetch(`${BASE_URL}/users/mypage`, {
+      method: 'get',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: sessionStorage.getItem('token'),
+      },
+    })
+      .then(res => res.json())
+      .then(data => setDetailInformation(data.result));
+  }, []);
   // 모두 머지됐을 때
 
   // useEffect(() => {

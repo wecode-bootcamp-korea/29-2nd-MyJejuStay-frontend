@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { ThemeList } from './Theme';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -10,6 +10,9 @@ import UserInfo from './UserInfo';
 import styled from 'styled-components';
 
 function Nav() {
+  const location = useLocation();
+  useEffect(() => {}, [location]);
+
   const [display, setDisplay] = useState(false);
 
   return (

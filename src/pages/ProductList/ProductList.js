@@ -18,7 +18,6 @@ const ProductList = () => {
         setProductInfos(res.message);
       });
   }, [location]);
-
   return (
     <ProductListWrap>
       <ProductFilterWrap>
@@ -28,7 +27,7 @@ const ProductList = () => {
       <ProductListContentsWrap>
         <ProductItemsWrap>
           {productInfos.length >= 1 &&
-            productInfos.map(productInfo => (
+            productInfos?.map(productInfo => (
               <ProductItem key={productInfo.id} productInfo={productInfo} />
             ))}
         </ProductItemsWrap>

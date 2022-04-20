@@ -4,20 +4,6 @@ import { ThemeList } from '../../components/Nav/Theme';
 import styled from 'styled-components';
 
 const Main = () => {
-  // const [MainVideo, SetMainVideo] = useState([]);
-
-  // console.log('hello');
-
-  // useEffect(() => {
-  //   fetch('http://10.58.2.82:8000/mainpage')
-  //     .then(res => res.json())
-  //     .then(data => SetMainVideo(data));
-  // }, []);
-
-  // console.log(MainVideo);
-
-  // console.log(MainVideo.mainvideo);
-
   return (
     <MainSection>
       <MainVideo autoPlay muted loop>
@@ -56,7 +42,6 @@ const MainContents = styled.div`
   position: absolute;
   bottom: 30%;
   left: 25%;
-  /* background-color: orange; */
   display: flex;
   text-align: center;
   align-content: flex-start;

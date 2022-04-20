@@ -1,23 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import MyPageDetail from './MyPageDetail';
 import { MyPageDetailInformationData } from './MyPageData';
+import { BASE_URL } from '../../api/config';
 import styled from 'styled-components';
 
 function MyPageReservation() {
   const [detailInformation, setDetailInformation] = useState([]);
 
-  // useEffect(() => {
-  //   fetch(`http://10.58.4.204:8000/users/mypage`, {
-  //     method: 'get',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //       Authorization:
-  //         'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0.WgDrUj6df_iJkOoZ5e_j9x9p-GPwuPq41HTQQ_jlNX8',
-  //     },
-  //   })
-  //     .then(res => res.json())
-  //     .then(data => setDetailInformation(data.result));
-  // }, []);
+  useEffect(() => {
+    fetch(`${BASE_URL}/users/reservationinfo`, {
+      method: 'get',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: sessionStorage.getItem('token'),
+      },
+    })
+      .then(res => res.json())
+      .then(data => {
+        // console.log(data);
+        setDetailInformation(data.result);
+      });
+  }, []);
   // 모두 머지됐을 때
 
   // useEffect(() => {
@@ -50,47 +53,48 @@ function MyPageReservation() {
                 <InformationHeader>Trip Information</InformationHeader>
                 <InformationList>
                   <InformationListTitle>숙소 이름</InformationListTitle>
-                  {/* <div>
-                    {detailInformation &&
+                  <div>
+                    {detailInformation[0] &&
                       detailInformation[0].accommodation_name}
-                  </div> */}
+                  </div>
                 </InformationList>
                 <InformationList>
                   <InformationListTitle>결제 금액</InformationListTitle>
-                  {/* <div>
+                  <div>
                     ₩{' '}
-                    {detailInformation &&
+                    {detailInformation[0] &&
                       (+detailInformation[0].price).toLocaleString()}
-                  </div> */}
+                  </div>
                 </InformationList>
                 <InformationList>
                   <InformationListTitle>투숙 인원</InformationListTitle>
-                  {/* <div>
+                  <div>
                     <span>
                       어른:{' '}
-                      {detailInformation &&
+                      {detailInformation[0] &&
                         detailInformation[0].number_of_adults}
                       명 /{' '}
                     </span>
                     <span>
                       아이:{' '}
-                      {detailInformation &&
+                      {detailInformation[0] &&
                         detailInformation[0].number_of_children}
                       명
                     </span>
-                  </div> */}
+                  </div>
                 </InformationList>
                 <InformationList>
                   <InformationListTitle>체크인 날짜</InformationListTitle>
-                  {/* <div>
-                    {detailInformation && detailInformation[0].check_in_date}
-                  </div> */}
+                  <div>
+                    {detailInformation[0] && detailInformation[0].check_in_date}
+                  </div>
                 </InformationList>
                 <InformationList>
                   <InformationListTitle>체크아웃 날짜</InformationListTitle>
-                  {/* <div>
-                    {detailInformation && detailInformation[0].check_out_date}
-                  </div> */}
+                  <div>
+                    {detailInformation[0] &&
+                      detailInformation[0].check_out_date}
+                  </div>
                 </InformationList>
               </InformationLists>
             </UserTripInformation>

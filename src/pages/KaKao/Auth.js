@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import qs from 'qs';
@@ -45,7 +44,6 @@ const Auth = () => {
             navigate('/login');
           }
         });
-      // navigate('/');
     } catch (err) {
       alert(err);
     }

@@ -1,10 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { api } from '../../../api/config';
-import FormLayout from './FormLayout';
-import Input from './Input';
-import Button from './Button';
-import styled from 'styled-components';
+import { api } from '../../../../api/config';
+import FormLayout from '../../components/FormLayout';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
+import {
+  SignUpBody,
+  Heading,
+  AgreementWrap,
+  AgreementCheckbox,
+  AgreementH1,
+  SwitchWrap,
+  SwitchToLogin,
+  SwitchToSignUp,
+} from './style';
 
 const SignUpForm = props => {
   const { type, title, inputData } = props;
@@ -112,49 +121,3 @@ const SignUpForm = props => {
 };
 
 export default SignUpForm;
-
-const SignUpBody = styled.div`
-  height: 100vh;
-  position: relative;
-`;
-
-const Heading = styled.h1`
-  font-size: 24px;
-  font-weight: bold;
-`;
-
-const AgreementWrap = styled.div`
-  display: flex;
-  padding: 12px;
-  width: 320px;
-  border: ${props => props.theme.border};
-  margin: 12px auto;
-  text-align: center;
-`;
-
-const AgreementCheckbox = styled.input`
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-`;
-
-const AgreementH1 = styled.h1`
-  font-size: 12px;
-`;
-
-const SwitchWrap = styled.div`
-  display: flex;
-  padding: 12px 0;
-  text-align: center;
-  width: 320px;
-  justify-content: center;
-  margin: auto;
-`;
-
-const SwitchToLogin = styled.p`
-  font-size: 12px;
-`;
-
-const SwitchToSignUp = styled.p`
-  font-size: 12px;
-`;

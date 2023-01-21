@@ -55,7 +55,6 @@ const SignUpButton = styled.button`
 
 const KakaoButton = styled.button`
   background-color: ${props => props.theme.kakaoYellow};
-  /* color: black; */
   border-radius: 5px;
   width: 320px;
   height: 46px;

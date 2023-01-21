@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const SignUpBody = styled.div`
-  height: 100vh;
   position: relative;
+  height: 900px;
 `;
 
 export const Heading = styled.h1`
@@ -12,36 +12,23 @@ export const Heading = styled.h1`
 
 export const AgreementWrap = styled.div`
   display: flex;
-  padding: 12px;
-  width: 320px;
-  border: ${props => props.theme.border};
-  margin: 12px auto;
+  align-items: center;
   text-align: center;
+
+  margin-top: 20px;
+
+  width: 320px;
+  height: 40px;
+
+  border: ${props => props.theme.border};
 `;
 
 export const AgreementCheckbox = styled.input`
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  margin: 0 10px;
 `;
 
 export const AgreementH1 = styled.h1`
-  font-size: 12px;
-`;
-
-export const SwitchWrap = styled.div`
-  display: flex;
-  padding: 12px 0;
-  text-align: center;
-  width: 320px;
-  justify-content: center;
-  margin: auto;
-`;
-
-export const SwitchToLogin = styled.p`
-  font-size: 12px;
-`;
-
-export const SwitchToSignUp = styled.p`
   font-size: 12px;
 `;

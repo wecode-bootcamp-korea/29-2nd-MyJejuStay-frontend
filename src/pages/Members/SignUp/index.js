@@ -1,11 +1,13 @@
 import React from 'react';
 import SignUpForm from './SignUpForm';
-import { SIGNUP_DATA } from './constants';
+import { TYPE_SIGNUP, TITLE_SIGNUP, SIGNUP_DATA } from './constants';
 
 export default function SignUp() {
   return (
-    <div className="signUp">
-      <SignUpForm type="signUp" title="회원가입" inputData={SIGNUP_DATA} />
-    </div>
+    <SignUpForm
+      type={TYPE_SIGNUP}
+      title={TITLE_SIGNUP}
+      inputData={SIGNUP_DATA}
+    />
   );
 }

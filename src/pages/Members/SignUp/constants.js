@@ -1,15 +1,4 @@
-import React from 'react';
-import SignUpForm from './SignComponents/SignUpForm';
-
-export default function SignUp() {
-  return (
-    <div className="signUp">
-      <SignUpForm type="signUp" title="회원가입" inputData={SIGNUP_DATA} />
-    </div>
-  );
-}
-
-const SIGNUP_DATA = [
+export const SIGNUP_DATA = [
   {
     name: 'name',
     text: '이름을 영어로 입력해주세요 *',

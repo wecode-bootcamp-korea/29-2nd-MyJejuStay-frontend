@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { api } from '../../../api/config';
-import FormLayout from './FormLayout';
-import Input from './Input';
-import Button from './Button';
-import styled from 'styled-components';
+import { api } from '../../../../api/config';
+import FormLayout from '../../components/FormLayout';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
+import { LoginBody, Heading } from './style';
 
 const LoginForm = props => {
   const { title, inputData } = props;
@@ -96,13 +96,3 @@ const LoginForm = props => {
 };
 
 export default LoginForm;
-
-const LoginBody = styled.div`
-  height: 100vh;
-  position: relative;
-`;
-
-const Heading = styled.h1`
-  font-size: 24px;
-  font-weight: bold;
-`;

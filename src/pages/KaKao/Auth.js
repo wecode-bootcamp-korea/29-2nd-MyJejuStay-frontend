@@ -4,10 +4,11 @@ import qs from 'qs';
 import { api } from '../../api/config';
 
 const Auth = () => {
-  const code = new URL(window.location.href).searchParams.get('code');
   const navigate = useNavigate();
+  const code = new URL(window.location.href).searchParams.get('code');
 
   const getToken = async () => {
+    const kakaoAuthUrl = 'https://kauth.kakao.com/oauth/token';
     const payload = qs.stringify({
       grant_type: 'authorization_code',
       client_id: process.env.REACT_APP_REST_API_KEY,
@@ -16,12 +17,8 @@ const Auth = () => {
     });
 
     try {
-      const res = await axios.post(
-        'https://kauth.kakao.com/oauth/token',
-        payload
-      );
-
-      const access_token = res.data.access_token;
+      const res = await axios.post(kakaoAuthUrl, payload);
+      const { access_token } = res.data;
 
       fetch(`${api.kakaologin}`, {
         headers: {

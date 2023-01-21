@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const LoginBody = styled.div`
-  height: 100vh;
   position: relative;
+  height: 720px;
 `;
 
 export const Heading = styled.h1`

@@ -1,94 +1,92 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { api } from '../../../../api/config';
+import { regEmail, regPassword } from './validationTool';
 import FormLayout from '../../components/FormLayout';
-import Input from '../../components/Input';
-import Button from '../../components/Button';
-import { LoginBody, Heading } from './style';
+import Inputs from '../../components/Inputs';
+import Buttons from '../../components/Buttons';
+import { LoginBody } from './style';
 
-const LoginForm = props => {
-  const { title, inputData } = props;
-  const location = useLocation();
+const LoginForm = ({ type, title, inputData }) => {
   const navigate = useNavigate();
-
-  useEffect(() => {}, [location]);
 
   const [inputValues, setInputValues] = useState({
     email: '',
     password: '',
   });
-
-  const regEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3}$/;
-  const regPassword =
-    /^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$/;
-
   const [isValidate, setIsValidate] = useState(false);
 
   const handleInput = e => {
     const { name, value } = e.target;
-    setInputValues({ ...inputValues, [name]: value });
+    setInputValues(prev => ({ ...prev, [name]: value }));
+  };
+  const validateUser = result => {
+    if (result.message === 'SUCCESS') {
+      try {
+        sessionStorage.setItem('token', result.token);
+        alert('로그인 성공!');
+        navigate('/');
+      } catch (error) {
+        alert(error);
+      }
+    } else if (result.message === 'INVALID_EMAIL') {
+      alert('Email Does not Exist! 이메일을 확인해주세요.');
+    } else if (result.message === 'INVALID_PASSWORD') {
+      alert('Wrong Password! 비밀번호를 다시 입력해주세요.');
+    } else if (result.message === 'KEY_ERROR') {
+      alert('이메일 또는 비밀번호 조건이 맞지 않습니다.');
+    } else {
+      alert('존재하지 않는 계정입니다.');
+      navigate('/signup');
+    }
   };
 
-  const testValidation = () => {
-    regEmail.test(inputValues.email) && regPassword.test(inputValues.password)
-      ? setIsValidate(true)
-      : setIsValidate(false);
-  };
-
-  const clickLoginButton = () => {
-    fetch(`${api.login}`, {
+  const onClickLoginButton = () => {
+    const bodyData = JSON.stringify({
+      email: inputValues.email,
+      password: inputValues.password,
+    });
+    fetch(api.login, {
       method: 'POST',
-      body: JSON.stringify({
-        email: inputValues.email,
-        password: inputValues.password,
-      }),
+      body: bodyData,
     })
       .then(response => response.json())
       .then(result => {
-        if (result.message === 'SUCCESS') {
-          try {
-            sessionStorage.setItem('token', result.token);
-            alert('로그인 성공!');
-            navigate('/');
-            window.locaion.reload();
-          } catch (err) {
-            alert(err);
-          }
-        } else if (result.message === 'INVALID_EMAIL') {
-          alert('Email Does not Exist! 이메일을 확인해주세요.');
-        } else if (result.message === 'INVALID_PASSWORD') {
-          alert('Wrong Password! 비밀번호를 다시 입력해주세요.');
-        } else if (result.message === 'KEY_ERROR') {
-          alert('이메일 또는 비밀번호 조건이 맞지 않습니다.');
-        } else {
-          alert('존재하지 않는 계정입니다.');
-          navigate('/signup');
-        }
+        validateUser(result);
+      })
+      .catch(() => {
+        alert('로그인 실패!');
       });
   };
 
   useEffect(() => {
-    testValidation();
-  });
+    const testValidation = values => {
+      regEmail.test(values.email) && regPassword.test(values.password)
+        ? setIsValidate(true)
+        : setIsValidate(false);
+    };
+
+    testValidation(inputValues);
+  }, [inputValues]);
 
   return (
     <LoginBody>
-      <FormLayout>
-        <Heading>{title}</Heading>
-        {inputData.map((data, idx) => (
-          <Input
-            key={idx}
-            name={data.name}
-            text={data.text}
-            type={data.type}
-            placeholder={data.placeholder}
-            handleInput={handleInput}
+      <FormLayout title={title} type={type}>
+        {inputData.map(item => (
+          <Inputs
+            key={item.name}
+            name={item.name}
+            text={item.text}
+            type={item.type}
+            placeholder={item.placeholder}
+            onChange={handleInput}
           />
         ))}
-        <Button
+
+        <Buttons
           title={title}
           isValidate={isValidate}
-          clickLoginButton={clickLoginButton}
+          onClick={onClickLoginButton}
         />
       </FormLayout>
     </LoginBody>

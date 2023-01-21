@@ -1,3 +1,6 @@
+export const TYPE_SIGNUP = 'signUp';
+export const TITLE_SIGNUP = '회원가입';
+
 export const SIGNUP_DATA = [
   {
     name: 'name',
